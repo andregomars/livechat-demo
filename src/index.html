@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AngularTemplate</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+  <title>livechat-demo</title>
+</head>
+<body>
+<my-app>loading</my-app>
+<script type="text/javascript">
+
+  window.__lc = window.__lc || {};
+
+      delete(window.LC_API);
+    delete(window.LC_Invite);
+    delete(window.__lc_iframe_current_skill);
+    delete(window.__lc_inited);
+    delete(window.__lc_lang);
+    
+  window.__lc.license = 9808415; // andre.shen@papermart.com
+  window.__lc.params = [
+        { name: 'phone', value: '6261112222' },
+        { name: 'company', value: 'disney' }
+      ];
+
+  (function () {
+      var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+      lc.src = ('https:' === document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+  })();
+</script>
+</body>
+</html>
